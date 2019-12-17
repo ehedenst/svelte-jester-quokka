@@ -1,0 +1,27 @@
+{
+  "name": "svelte-jester-quokka",
+  "version": "1.0.0",
+  "description": "Quokka plugin that allows you to import svelte components using svelte-jester",
+  "keywords": [
+    "svelte",
+    "jester",
+    "quokka"
+  ],
+  "author": "Erik Hedenström",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehedenst/svelte-jester-quokka.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ehedenst/svelte-jester-quokka/issues"
+  },
+  "homepage": "https://github.com/ehedenst/svelte-jester-quokka#readme",
+  "peerDependencies": {
+    "svelte-jester": "1.x"
+  }
+}
