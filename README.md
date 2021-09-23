@@ -42,18 +42,17 @@ Following is a complete example with [inline quokka configuration](https://quokk
 
 ```javascript
 ({
-  babel: true,
   plugins: ['jsdom-quokka-plugin', 'svelte-jester-quokka'],
   jsdom: { html: `<div id="test"></div>` },
   svelte: { preprocess: true }
 });
 
 import { render } from '@testing-library/svelte';
-import App from './App.svelte';
+import { default as App } from './App.svelte';
 
 const target = document.getElementById('test');
 
-render(App, { props: { name: 'quokka' } }, { container: target });
+const { component } = render(App, { props: { name: 'quokka' } }, { container: target });
 
 console.log(target.innerHTML);
 ```

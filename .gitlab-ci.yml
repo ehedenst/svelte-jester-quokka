@@ -1,0 +1,20 @@
+image: node
+
+stages:
+  - test
+  - deploy
+
+test:
+  stage: test
+  script:
+    - npm install
+    - npm test
+
+publish:
+  stage: deploy
+  only:
+    - tags
+    - triggers
+  script:
+    - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
+    - npm publish
