@@ -1,6 +1,6 @@
 {
   "name": "svelte-jester-quokka",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Quokka plugin that allows you to import svelte components using svelte-jester",
   "keywords": [
     "svelte",
