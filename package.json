@@ -11,7 +11,9 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js",
+    "preversion": "npm test",
+    "postversion": "git push --follow-tags"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,9 @@
   },
   "homepage": "https://github.com/ehedenst/svelte-jester-quokka#readme",
   "peerDependencies": {
-    "svelte-jester": "1.x"
+    "svelte-jester": "^2.1.5"
+  },
+  "dependencies": {
+    "pirates": "^4.0.1"
   }
 }
