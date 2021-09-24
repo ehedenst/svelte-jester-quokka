@@ -13,7 +13,7 @@ module.exports = {
         return code;
       },
       {
-        exts: ['.svelte'],
+        exts: config.svelte.exts || ['.svelte'],
       }
     );
   },
